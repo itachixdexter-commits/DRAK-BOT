@@ -40,7 +40,7 @@ async def start(update: Update, context) -> None:
         [InlineKeyboardButton("نكتة عشوائية", callback_data='get_joke')],
         [InlineKeyboardButton("برومبت كسر جيميني", callback_data='gemini_jailbreak')],
         [InlineKeyboardButton("برومبت كسر ديبسيك", callback_data='deepseek_jailbreak')],
-        [InlineKeyboardButton("هجوم DDoS (وهمي)", callback_data='fake_ddos')],
+        [InlineKeyboardButton("هجوم DDoS", callback_data='fake_ddos')],
     ]
     reply_markup = InlineKeyboardMarkup(keyboard)
     await update.message.reply_text("أهلاً بك في بوت الخدمات المتكاملة! اختر الخدمة التي تريدها:", reply_markup=reply_markup)
@@ -371,7 +371,7 @@ async def send_deepseek_jailbreak(update: Update, context) -> None:
 
 async def fake_ddos_attack(update: Update, context) -> None:
     url = update.message.text
-    message = await update.message.reply_text(f"🚀 جاري بدء هجوم DDoS على {url}...\nيرجى الانتظار.")
+    message = await update.message.reply_text(f"☠️ جاري بدء هجوم DDoS على {url}...\nيرجى الانتظار.")
     
     for i in range(1, 11):
         await asyncio.sleep(1)
@@ -387,7 +387,7 @@ async def fake_ddos_attack(update: Update, context) -> None:
             pass
             
     await asyncio.sleep(1)
-    await message.edit_text(f"✅ اكتمل الهجوم الوهمي على {url}.\nالخادم الآن غير متصل (نظرياً).")
+    await message.edit_text(f"☠️ اكتمل الهجوم على {url}.\nالخادم الآن غير متصل (نظرياً).")
     context.user_data["state"] = None
 
 async def handle_message(update: Update, context) -> None:
