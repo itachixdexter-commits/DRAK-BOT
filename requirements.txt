@@ -6,4 +6,4 @@ Pillow
 phonenumbers
 dnspython
 pyjokes
-openai
+openai==0.28.1
