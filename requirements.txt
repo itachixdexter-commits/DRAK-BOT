@@ -1,0 +1,10 @@
+python-telegram-bot
+requests
+beautifulsoup4
+pyshorteners
+Pillow
+phonenumbers
+dnspython
+pyjokes
+aiohttp
+colorama
