@@ -56,10 +56,10 @@ async def button_callback(update: Update, context) -> None:
         await query.edit_message_text("الرجاء إرسال عنوان IP للحصول على معلوماته.")
         context.user_data["state"] = "awaiting_ip_address"
     elif query.data == 'get_phone_info':
-        await query.edit_message_text("الرجاء إرسال رقم الهاتف (مع رمز الدولة) للحصول على معلوماته القانونية.")
+        await query.edit_message_text("الرجاء إرسال رقم الهاتف (مع رمز الدولة) للحصول على معلوماته.")
         context.user_data["state"] = "awaiting_phone_number"
     elif query.data == 'get_email_info':
-        await query.edit_message_text("الرجاء إرسال عنوان البريد الإلكتروني للحصول على معلوماته القانونية.")
+        await query.edit_message_text("الرجاء إرسال عنوان البريد الإلكتروني للحصول على معلوماته .")
         context.user_data["state"] = "awaiting_email_address"
     elif query.data == 'shorten_url':
         await query.edit_message_text("الرجاء إرسال الرابط الذي تريد اختصاره.")
@@ -81,7 +81,7 @@ async def button_callback(update: Update, context) -> None:
     elif query.data == 'deepseek_jailbreak':
         await send_deepseek_jailbreak(update, context)
     elif query.data == 'fake_ddos':
-        await query.edit_message_text("الرجاء إرسال رابط الموقع لبدء الهجوم الوهمي.")
+        await query.edit_message_text("الرجاء إرسال رابط الموقع لبدء الهجوم.")
         context.user_data["state"] = "awaiting_ddos_url"
 
 async def get_html_content(update: Update, context) -> None:
