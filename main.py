@@ -25,7 +25,7 @@ from telegram.ext import Application, CommandHandler, MessageHandler, filters, C
 logging.basicConfig(format="%(asctime)s - %(name)s - %(levelname)s - %(message)s", level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-TOKEN = "8689022493:AAFKBDoaQGPtykf4vVERQ4WLN17eHSSNbbQ"
+TOKEN = "8799736027:AAFbJqNIScYYsx8bHmn227nBLubTYsgY18I"
 
 async def start(update: Update, context) -> None:
     keyboard = [
