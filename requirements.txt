@@ -1,10 +1,9 @@
 python-telegram-bot
-requests
+httpx
 beautifulsoup4
 pyshorteners
 Pillow
 phonenumbers
 dnspython
 pyjokes
-aiohttp
-colorama
+openai
